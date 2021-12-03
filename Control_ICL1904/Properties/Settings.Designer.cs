@@ -12,7 +12,7 @@ namespace Control_ICL1904.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.0.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.3.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -20,6 +20,54 @@ namespace Control_ICL1904.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("em1900\\bin")]
+        public string Wkdir1 {
+            get {
+                return ((string)(this["Wkdir1"]));
+            }
+            set {
+                this["Wkdir1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("em1900")]
+        public string Wkdir2 {
+            get {
+                return ((string)(this["Wkdir2"]));
+            }
+            set {
+                this["Wkdir2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("c:\\")]
+        public string Drive1 {
+            get {
+                return ((string)(this["Drive1"]));
+            }
+            set {
+                this["Drive1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("c:\\")]
+        public string Drive2 {
+            get {
+                return ((string)(this["Drive2"]));
+            }
+            set {
+                this["Drive2"] = value;
             }
         }
         
@@ -31,6 +79,54 @@ namespace Control_ICL1904.Properties {
         public string idmsConnectionString {
             get {
                 return ((string)(this["idmsConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string Setting {
+            get {
+                return ((string)(this["Setting"]));
+            }
+            set {
+                this["Setting"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("em1900")]
+        public string Wkdir3 {
+            get {
+                return ((string)(this["Wkdir3"]));
+            }
+            set {
+                this["Wkdir3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("cmd.exe")]
+        public string Prog1 {
+            get {
+                return ((string)(this["Prog1"]));
+            }
+            set {
+                this["Prog1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("/c")]
+        public string Prog1arg {
+            get {
+                return ((string)(this["Prog1arg"]));
+            }
+            set {
+                this["Prog1arg"] = value;
             }
         }
     }

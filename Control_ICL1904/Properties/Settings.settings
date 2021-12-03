@@ -2,13 +2,37 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Control_ICL1904.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
+    <Setting Name="Wkdir1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">em1900\bin</Value>
+    </Setting>
+    <Setting Name="Wkdir2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">em1900</Value>
+    </Setting>
+    <Setting Name="Drive1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\</Value>
+    </Setting>
+    <Setting Name="Drive2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\</Value>
+    </Setting>
     <Setting Name="idmsConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
   &lt;ConnectionString&gt;server=localhost;user id=root;password=hampshire1;persistsecurityinfo=True;database=idms&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">server=localhost;user id=root;password=hampshire1;persistsecurityinfo=True;database=idms</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Wkdir3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">em1900</Value>
+    </Setting>
+    <Setting Name="Prog1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cmd.exe</Value>
+    </Setting>
+    <Setting Name="Prog1arg" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/c</Value>
     </Setting>
   </Settings>
 </SettingsFile>
