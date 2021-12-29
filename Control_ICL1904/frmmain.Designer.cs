@@ -45,6 +45,7 @@
             this.telnetOn1900ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iDEsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openCobolIDEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.runDecPDP10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readDocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOBOLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,8 +68,26 @@
             this.basicToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cITYAndGUILDSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cityAndGuildsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fINDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.findEnquiryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.onlineEnquiryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.find2EnquiryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dATAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataManagementDataValidatingEdittingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataManagementDataUpdating2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataManagementIntroductionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataManagementDataValidationEdittingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataManagementDataUpdatingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataManagementDataSoftwareReportingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataManagementDataFilearrangementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataManagementDataFrameworkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.decBasicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.basicToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.decCOBOLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOBOLToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.decAlterSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -83,6 +102,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.telnetOnPDP10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -161,7 +181,8 @@
             this.runICL1904G3SystemToolStripMenuItem,
             this.runICL1904G6SystemToolStripMenuItem,
             this.loadVDUsToolStripMenuItem,
-            this.iDEsToolStripMenuItem});
+            this.iDEsToolStripMenuItem,
+            this.runDecPDP10ToolStripMenuItem});
             this.emulateSystemsToolStripMenuItem.Name = "emulateSystemsToolStripMenuItem";
             this.emulateSystemsToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.emulateSystemsToolStripMenuItem.Text = "Emulate Systems";
@@ -187,7 +208,8 @@
             this.loadVDUsToolStripMenuItem1,
             this.createCardsToolStripMenuItem,
             this.viewCardsToolStripMenuItem,
-            this.telnetOn1900ToolStripMenuItem});
+            this.telnetOn1900ToolStripMenuItem,
+            this.telnetOnPDP10ToolStripMenuItem});
             this.loadVDUsToolStripMenuItem.Name = "loadVDUsToolStripMenuItem";
             this.loadVDUsToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.loadVDUsToolStripMenuItem.Text = "Tools";
@@ -195,28 +217,28 @@
             // loadVDUsToolStripMenuItem1
             // 
             this.loadVDUsToolStripMenuItem1.Name = "loadVDUsToolStripMenuItem1";
-            this.loadVDUsToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.loadVDUsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.loadVDUsToolStripMenuItem1.Text = "Load VDUs";
             this.loadVDUsToolStripMenuItem1.Click += new System.EventHandler(this.LoadVDUsToolStripMenuItem1_Click);
             // 
             // createCardsToolStripMenuItem
             // 
             this.createCardsToolStripMenuItem.Name = "createCardsToolStripMenuItem";
-            this.createCardsToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.createCardsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.createCardsToolStripMenuItem.Text = "Create Cards";
             this.createCardsToolStripMenuItem.Click += new System.EventHandler(this.CreateCardsToolStripMenuItem_Click_1);
             // 
             // viewCardsToolStripMenuItem
             // 
             this.viewCardsToolStripMenuItem.Name = "viewCardsToolStripMenuItem";
-            this.viewCardsToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.viewCardsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewCardsToolStripMenuItem.Text = "View Cards";
             this.viewCardsToolStripMenuItem.Click += new System.EventHandler(this.ViewCardsToolStripMenuItem_Click);
             // 
             // telnetOn1900ToolStripMenuItem
             // 
             this.telnetOn1900ToolStripMenuItem.Name = "telnetOn1900ToolStripMenuItem";
-            this.telnetOn1900ToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.telnetOn1900ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.telnetOn1900ToolStripMenuItem.Text = "Telnet on 1900";
             this.telnetOn1900ToolStripMenuItem.Click += new System.EventHandler(this.TelnetOn1900ToolStripMenuItem_Click);
             // 
@@ -235,6 +257,13 @@
             this.openCobolIDEToolStripMenuItem.Text = "OpenCobolIDE";
             this.openCobolIDEToolStripMenuItem.Click += new System.EventHandler(this.openCobolIDEToolStripMenuItem_Click_1);
             // 
+            // runDecPDP10ToolStripMenuItem
+            // 
+            this.runDecPDP10ToolStripMenuItem.Name = "runDecPDP10ToolStripMenuItem";
+            this.runDecPDP10ToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.runDecPDP10ToolStripMenuItem.Text = "Run Dec PDP10";
+            this.runDecPDP10ToolStripMenuItem.Click += new System.EventHandler(this.runDecPDP10ToolStripMenuItem_Click);
+            // 
             // readDocumentsToolStripMenuItem
             // 
             this.readDocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -244,7 +273,11 @@
             this.nIMMSToolStripMenuItem,
             this.dATAFEEDToolStripMenuItem,
             this.bASICToolStripMenuItem,
-            this.cITYAndGUILDSToolStripMenuItem});
+            this.cITYAndGUILDSToolStripMenuItem,
+            this.fINDToolStripMenuItem,
+            this.dATAToolStripMenuItem,
+            this.decBasicToolStripMenuItem,
+            this.decCOBOLToolStripMenuItem});
             this.readDocumentsToolStripMenuItem.Name = "readDocumentsToolStripMenuItem";
             this.readDocumentsToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
             this.readDocumentsToolStripMenuItem.Text = "Read Documents";
@@ -258,8 +291,8 @@
             this.cOBOLAncilliriesToolStripMenuItem,
             this.cOBOLExtrasToolStripMenuItem});
             this.cOBOLToolStripMenuItem.Name = "cOBOLToolStripMenuItem";
-            this.cOBOLToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.cOBOLToolStripMenuItem.Text = "COBOL";
+            this.cOBOLToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.cOBOLToolStripMenuItem.Text = "ICL COBOL";
             this.cOBOLToolStripMenuItem.Click += new System.EventHandler(this.COBOLToolStripMenuItem_Click);
             // 
             // manualToolStripMenuItem
@@ -302,8 +335,8 @@
             this.tPSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.programmingToolStripMenuItem});
             this.tPSToolStripMenuItem.Name = "tPSToolStripMenuItem";
-            this.tPSToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.tPSToolStripMenuItem.Text = "TPS";
+            this.tPSToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.tPSToolStripMenuItem.Text = "ICL TPS";
             // 
             // programmingToolStripMenuItem
             // 
@@ -318,8 +351,8 @@
             this.adminToolStripMenuItem,
             this.cobolToolStripMenuItem1});
             this.iDMSToolStripMenuItem.Name = "iDMSToolStripMenuItem";
-            this.iDMSToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.iDMSToolStripMenuItem.Text = "IDMS";
+            this.iDMSToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.iDMSToolStripMenuItem.Text = "Dec IDMS";
             // 
             // adminToolStripMenuItem
             // 
@@ -342,8 +375,8 @@
             this.fileHandlerToolStripMenuItem,
             this.dataManagementSystemToolStripMenuItem});
             this.nIMMSToolStripMenuItem.Name = "nIMMSToolStripMenuItem";
-            this.nIMMSToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.nIMMSToolStripMenuItem.Text = "NIMMS";
+            this.nIMMSToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.nIMMSToolStripMenuItem.Text = "ICL NIMMS";
             // 
             // instalationToolStripMenuItem
             // 
@@ -371,8 +404,8 @@
             this.dATAFEEDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.instalationToolStripMenuItem1});
             this.dATAFEEDToolStripMenuItem.Name = "dATAFEEDToolStripMenuItem";
-            this.dATAFEEDToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.dATAFEEDToolStripMenuItem.Text = "DATAFEED";
+            this.dATAFEEDToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.dATAFEEDToolStripMenuItem.Text = "ICL DATAFEED";
             // 
             // instalationToolStripMenuItem1
             // 
@@ -386,8 +419,8 @@
             this.bASICToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.basicToolStripMenuItem1});
             this.bASICToolStripMenuItem.Name = "bASICToolStripMenuItem";
-            this.bASICToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.bASICToolStripMenuItem.Text = "BASIC";
+            this.bASICToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.bASICToolStripMenuItem.Text = "ICL BASIC";
             // 
             // basicToolStripMenuItem1
             // 
@@ -401,8 +434,8 @@
             this.cITYAndGUILDSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cityAndGuildsToolStripMenuItem1});
             this.cITYAndGUILDSToolStripMenuItem.Name = "cITYAndGUILDSToolStripMenuItem";
-            this.cITYAndGUILDSToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.cITYAndGUILDSToolStripMenuItem.Text = "CITY_And_GUILDS";
+            this.cITYAndGUILDSToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.cITYAndGUILDSToolStripMenuItem.Text = "ICL CITY_And_GUILDS";
             // 
             // cityAndGuildsToolStripMenuItem1
             // 
@@ -411,10 +444,142 @@
             this.cityAndGuildsToolStripMenuItem1.Text = "City and Guilds";
             this.cityAndGuildsToolStripMenuItem1.Click += new System.EventHandler(this.CityAndGuildsToolStripMenuItem1_Click);
             // 
+            // fINDToolStripMenuItem
+            // 
+            this.fINDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.findEnquiryToolStripMenuItem,
+            this.onlineEnquiryToolStripMenuItem,
+            this.find2EnquiryToolStripMenuItem});
+            this.fINDToolStripMenuItem.Name = "fINDToolStripMenuItem";
+            this.fINDToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.fINDToolStripMenuItem.Text = "ICL FIND";
+            // 
+            // findEnquiryToolStripMenuItem
+            // 
+            this.findEnquiryToolStripMenuItem.Name = "findEnquiryToolStripMenuItem";
+            this.findEnquiryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.findEnquiryToolStripMenuItem.Text = "Find Enquiry";
+            this.findEnquiryToolStripMenuItem.Click += new System.EventHandler(this.findEnquiryToolStripMenuItem_Click);
+            // 
+            // onlineEnquiryToolStripMenuItem
+            // 
+            this.onlineEnquiryToolStripMenuItem.Name = "onlineEnquiryToolStripMenuItem";
+            this.onlineEnquiryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.onlineEnquiryToolStripMenuItem.Text = "Online Enquiry";
+            this.onlineEnquiryToolStripMenuItem.Click += new System.EventHandler(this.onlineEnquiryToolStripMenuItem_Click);
+            // 
+            // find2EnquiryToolStripMenuItem
+            // 
+            this.find2EnquiryToolStripMenuItem.Name = "find2EnquiryToolStripMenuItem";
+            this.find2EnquiryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.find2EnquiryToolStripMenuItem.Text = "Find 2 Enquiry";
+            this.find2EnquiryToolStripMenuItem.Click += new System.EventHandler(this.find2EnquiryToolStripMenuItem_Click);
+            // 
+            // dATAToolStripMenuItem
+            // 
+            this.dATAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dataManagementDataValidatingEdittingToolStripMenuItem,
+            this.dataManagementDataUpdating2ToolStripMenuItem,
+            this.dataManagementIntroductionToolStripMenuItem,
+            this.dataManagementDataValidationEdittingToolStripMenuItem,
+            this.dataManagementDataUpdatingToolStripMenuItem,
+            this.dataManagementDataSoftwareReportingToolStripMenuItem,
+            this.dataManagementDataFilearrangementToolStripMenuItem,
+            this.dataManagementDataFrameworkToolStripMenuItem});
+            this.dATAToolStripMenuItem.Name = "dATAToolStripMenuItem";
+            this.dATAToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.dATAToolStripMenuItem.Text = "ICL DATAMANAGEMENT";
+            // 
+            // dataManagementDataValidatingEdittingToolStripMenuItem
+            // 
+            this.dataManagementDataValidatingEdittingToolStripMenuItem.Name = "dataManagementDataValidatingEdittingToolStripMenuItem";
+            this.dataManagementDataValidatingEdittingToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
+            this.dataManagementDataValidatingEdittingToolStripMenuItem.Text = "Data_Management_Data_Validating_Editting";
+            this.dataManagementDataValidatingEdittingToolStripMenuItem.Click += new System.EventHandler(this.dataManagementDataValidatingEdittingToolStripMenuItem_Click);
+            // 
+            // dataManagementDataUpdating2ToolStripMenuItem
+            // 
+            this.dataManagementDataUpdating2ToolStripMenuItem.Name = "dataManagementDataUpdating2ToolStripMenuItem";
+            this.dataManagementDataUpdating2ToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
+            this.dataManagementDataUpdating2ToolStripMenuItem.Text = "Data_Management_Data_Updating (2)";
+            this.dataManagementDataUpdating2ToolStripMenuItem.Click += new System.EventHandler(this.dataManagementDataUpdating2ToolStripMenuItem_Click);
+            // 
+            // dataManagementIntroductionToolStripMenuItem
+            // 
+            this.dataManagementIntroductionToolStripMenuItem.Name = "dataManagementIntroductionToolStripMenuItem";
+            this.dataManagementIntroductionToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
+            this.dataManagementIntroductionToolStripMenuItem.Text = "Data_Management_Introduction";
+            this.dataManagementIntroductionToolStripMenuItem.Click += new System.EventHandler(this.dataManagementIntroductionToolStripMenuItem_Click);
+            // 
+            // dataManagementDataValidationEdittingToolStripMenuItem
+            // 
+            this.dataManagementDataValidationEdittingToolStripMenuItem.Name = "dataManagementDataValidationEdittingToolStripMenuItem";
+            this.dataManagementDataValidationEdittingToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
+            this.dataManagementDataValidationEdittingToolStripMenuItem.Text = "Data_Management_Data_Validation_Editting";
+            this.dataManagementDataValidationEdittingToolStripMenuItem.Click += new System.EventHandler(this.dataManagementDataValidationEdittingToolStripMenuItem_Click);
+            // 
+            // dataManagementDataUpdatingToolStripMenuItem
+            // 
+            this.dataManagementDataUpdatingToolStripMenuItem.Name = "dataManagementDataUpdatingToolStripMenuItem";
+            this.dataManagementDataUpdatingToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
+            this.dataManagementDataUpdatingToolStripMenuItem.Text = "Data_Management_Data_Updating";
+            this.dataManagementDataUpdatingToolStripMenuItem.Click += new System.EventHandler(this.dataManagementDataUpdatingToolStripMenuItem_Click);
+            // 
+            // dataManagementDataSoftwareReportingToolStripMenuItem
+            // 
+            this.dataManagementDataSoftwareReportingToolStripMenuItem.Name = "dataManagementDataSoftwareReportingToolStripMenuItem";
+            this.dataManagementDataSoftwareReportingToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
+            this.dataManagementDataSoftwareReportingToolStripMenuItem.Text = "Data_Management_Data_Software_Reporting";
+            this.dataManagementDataSoftwareReportingToolStripMenuItem.Click += new System.EventHandler(this.dataManagementDataSoftwareReportingToolStripMenuItem_Click);
+            // 
+            // dataManagementDataFilearrangementToolStripMenuItem
+            // 
+            this.dataManagementDataFilearrangementToolStripMenuItem.Name = "dataManagementDataFilearrangementToolStripMenuItem";
+            this.dataManagementDataFilearrangementToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
+            this.dataManagementDataFilearrangementToolStripMenuItem.Text = "Data_Management_Data_File_arrangement";
+            this.dataManagementDataFilearrangementToolStripMenuItem.Click += new System.EventHandler(this.dataManagementDataFilearrangementToolStripMenuItem_Click);
+            // 
+            // dataManagementDataFrameworkToolStripMenuItem
+            // 
+            this.dataManagementDataFrameworkToolStripMenuItem.Name = "dataManagementDataFrameworkToolStripMenuItem";
+            this.dataManagementDataFrameworkToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
+            this.dataManagementDataFrameworkToolStripMenuItem.Text = "Data_Management_Data_Framework";
+            this.dataManagementDataFrameworkToolStripMenuItem.Click += new System.EventHandler(this.dataManagementDataFrameworkToolStripMenuItem_Click);
+            // 
+            // decBasicToolStripMenuItem
+            // 
+            this.decBasicToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.basicToolStripMenuItem2});
+            this.decBasicToolStripMenuItem.Name = "decBasicToolStripMenuItem";
+            this.decBasicToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.decBasicToolStripMenuItem.Text = "Dec Basic";
+            // 
+            // basicToolStripMenuItem2
+            // 
+            this.basicToolStripMenuItem2.Name = "basicToolStripMenuItem2";
+            this.basicToolStripMenuItem2.Size = new System.Drawing.Size(101, 22);
+            this.basicToolStripMenuItem2.Text = "Basic";
+            this.basicToolStripMenuItem2.Click += new System.EventHandler(this.basicToolStripMenuItem2_Click);
+            // 
+            // decCOBOLToolStripMenuItem
+            // 
+            this.decCOBOLToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cOBOLToolStripMenuItem2});
+            this.decCOBOLToolStripMenuItem.Name = "decCOBOLToolStripMenuItem";
+            this.decCOBOLToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.decCOBOLToolStripMenuItem.Text = "Dec COBOL";
+            // 
+            // cOBOLToolStripMenuItem2
+            // 
+            this.cOBOLToolStripMenuItem2.Name = "cOBOLToolStripMenuItem2";
+            this.cOBOLToolStripMenuItem2.Size = new System.Drawing.Size(113, 22);
+            this.cOBOLToolStripMenuItem2.Text = "COBOL";
+            // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alterSettingsToolStripMenuItem});
+            this.alterSettingsToolStripMenuItem,
+            this.decAlterSettingsToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.settingsToolStripMenuItem.Text = "Settings";
@@ -422,9 +587,16 @@
             // alterSettingsToolStripMenuItem
             // 
             this.alterSettingsToolStripMenuItem.Name = "alterSettingsToolStripMenuItem";
-            this.alterSettingsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.alterSettingsToolStripMenuItem.Text = "Alter Settings";
+            this.alterSettingsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.alterSettingsToolStripMenuItem.Text = "ICL Alter Settings";
             this.alterSettingsToolStripMenuItem.Click += new System.EventHandler(this.AlterSettingsToolStripMenuItem_Click);
+            // 
+            // decAlterSettingsToolStripMenuItem
+            // 
+            this.decAlterSettingsToolStripMenuItem.Name = "decAlterSettingsToolStripMenuItem";
+            this.decAlterSettingsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.decAlterSettingsToolStripMenuItem.Text = "Dec Alter Settings";
+            this.decAlterSettingsToolStripMenuItem.Click += new System.EventHandler(this.decAlterSettingsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -557,6 +729,13 @@
             this.label11.TabIndex = 51;
             this.label11.Text = "Use User MANAGER to logon";
             // 
+            // telnetOnPDP10ToolStripMenuItem
+            // 
+            this.telnetOnPDP10ToolStripMenuItem.Name = "telnetOnPDP10ToolStripMenuItem";
+            this.telnetOnPDP10ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.telnetOnPDP10ToolStripMenuItem.Text = "Telnet on PDP10";
+            this.telnetOnPDP10ToolStripMenuItem.Click += new System.EventHandler(this.telnetOnPDP10ToolStripMenuItem_Click);
+            // 
             // Frmmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -648,6 +827,26 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ToolStripMenuItem fINDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem findEnquiryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem onlineEnquiryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem find2EnquiryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dATAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataManagementDataValidatingEdittingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataManagementDataUpdating2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataManagementIntroductionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataManagementDataValidationEdittingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataManagementDataUpdatingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataManagementDataSoftwareReportingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataManagementDataFilearrangementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataManagementDataFrameworkToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem runDecPDP10ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem decBasicToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem basicToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem decCOBOLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOBOLToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem decAlterSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem telnetOnPDP10ToolStripMenuItem;
     }
 }
 
