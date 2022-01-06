@@ -34,5 +34,8 @@
     <Setting Name="Prog1arg" Type="System.String" Scope="User">
       <Value Profile="(Default)">/c</Value>
     </Setting>
+    <Setting Name="Wkdir4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SIMH\simh-master\PDP10\exe</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

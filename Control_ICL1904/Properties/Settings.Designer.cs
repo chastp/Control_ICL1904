@@ -129,5 +129,17 @@ namespace Control_ICL1904.Properties {
                 this["Prog1arg"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("SIMH\\simh-master\\PDP10\\exe")]
+        public string Wkdir4 {
+            get {
+                return ((string)(this["Wkdir4"]));
+            }
+            set {
+                this["Wkdir4"] = value;
+            }
+        }
     }
 }
