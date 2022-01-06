@@ -9,23 +9,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NLog;
+using NLog.Fluent;
+
 
 namespace Control_ICL1904
 {
     public partial class Frmmain : Form
     {
+        private Logger ICLlogger = new Logger();
         public Frmmain()
         {
             InitializeComponent();
+            ICLlogger.Info("Starting Control_ICL_1904");
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Exiting Control_ICL_1904");
             Close();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL 1904 George 3 run");
             string process1 = "cmd.exe ";
             string arg = "Run_ICL1904_G3.bat";
             ExecPro(process1, arg);
@@ -94,6 +101,7 @@ namespace Control_ICL1904
 
         private void Button7_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL 1904 George 6 run");
             string process1 = "cmd.exe ";
             string arg = "Run_ICL1904_G6.bat ";
             ExecPro(process1, arg );
@@ -107,6 +115,7 @@ namespace Control_ICL1904
 
         private void Button3_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting Printer Dump Run");
             string process1 = "cmd.exe ";
             string arg = "printdrdump.bat ";
             ExecPro(process1, arg);
@@ -114,6 +123,7 @@ namespace Control_ICL1904
 
         private void Button4_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting Looking ICL Tapes run");
             string process1 = "cmd.exe ";
             string arg = "lookmt.bat ";
             ExecPro(process1, arg);
@@ -122,6 +132,7 @@ namespace Control_ICL1904
 
         private void Button6_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting Preview ICL Tapes Run");
             string process1 = "cmd.exe ";
             string arg = "lookmt.list ";
             ExecPro(process1, arg);
@@ -129,6 +140,7 @@ namespace Control_ICL1904
 
         private void Button6_Click_1(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL Terminal run");
             string process1 = "cmd.exe ";
             string arg = "run_term.bat";
             ExecPro(process1, arg);
@@ -151,6 +163,7 @@ namespace Control_ICL1904
 
         private void ManualToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL 1904 Show Manual run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\COBOL\\tp4427_Cobol.djvu";
@@ -166,6 +179,7 @@ namespace Control_ICL1904
         }
         private void CompilingToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL 1904 Manuals");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\COBOL\\tp4426_Cobol_Compilers.djvu";
@@ -175,6 +189,7 @@ namespace Control_ICL1904
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL Catrd Edit run");
             string process1 = "cmd.exe ";
             string arg = "cardedit.exe ";
             ExecPro(process1, arg);
@@ -182,6 +197,7 @@ namespace Control_ICL1904
 
         private void Button4_Click_1(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL Card Viewer run");
             string process1 = "cmd.exe ";
             string arg = "CardViewer.exe ";
             ExecPro(process1, arg);
@@ -189,6 +205,7 @@ namespace Control_ICL1904
 
         private void RunICL1904G3SystemToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL 1904 George run");
             string process1 = "cmd.exe";
             string arg = "run_george.bat ";
             ExecPro(process1, arg);
@@ -196,6 +213,7 @@ namespace Control_ICL1904
 
         private void RunICL1904G6SystemToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL 1904 George 6 run");
             string process1 = "cmd.exe";
             string arg = "run_e6rm.bat ";
             ExecPro(process1, arg);
@@ -208,6 +226,7 @@ namespace Control_ICL1904
 
         private void LoadVDUsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting Loading up ICL Terminals run");
             string process1 = "cmd.exe";
             string arg = "run_term.bat ";
             ExecPro(process1, arg);
