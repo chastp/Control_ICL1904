@@ -106,12 +106,6 @@
     <Compile Include="frmDocs.Designer.cs">
       <DependentUpon>frmDocs.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmImage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmImage.Designer.cs">
-      <DependentUpon>frmImage.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,9 +120,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDocs.resx">
       <DependentUpon>frmDocs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmImage.resx">
-      <DependentUpon>frmImage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>

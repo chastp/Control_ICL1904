@@ -185,9 +185,9 @@ namespace Control_ICL1904
 
         private void ShowToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmImage frmimage1;
-            frmimage1 = new frmImage();
-            frmimage1.Show();
+            //frmImage frmimage1;
+            //frmimage1 = new frmImage();
+            //frmimage1.Show();
         }
         private void CompilingToolStripMenuItem_Click(object sender, EventArgs e)
         {
