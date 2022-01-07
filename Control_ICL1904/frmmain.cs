@@ -160,7 +160,7 @@ namespace Control_ICL1904
             ICLlogger.Info("Starting Looking ICL Tapes run");
             string process1 = "cmd.exe ";
             string arg = "lookmt.bat ";
-            if (File.Exists(lookmt.bat"))
+            if (File.Exists("C:\\em1900\\lookmt.bat"))
             {
                 ExecPro(process1, arg, "ICL");
             }
@@ -176,7 +176,7 @@ namespace Control_ICL1904
             ICLlogger.Info("Starting Preview ICL Tapes Run");
             string process1 = "cmd.exe ";
             string arg = "lookmt.list ";
-            if (File.Exists(C:\\em1900\\lookmt.list"))
+            if (File.Exists("C:\\em1900\\lookmt.list"))
             {
                 ExecPro(process1, arg, "ICL");
             }
