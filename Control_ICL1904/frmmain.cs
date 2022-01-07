@@ -916,7 +916,7 @@ namespace Control_ICL1904
             string process1 = "cmd.exe ";
             string arg = "notepad.exe ";
             arg = arg + " " + "tops10.cfg";
-            if (File.Exists("C:\simh\\tops10.cfg"))
+            if (File.Exists("C:\\simh\\tops10.cfg"))
             {
                 ExecPro(process1, arg, "Dec");
             }
