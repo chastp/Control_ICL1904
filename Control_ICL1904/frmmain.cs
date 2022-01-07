@@ -32,10 +32,17 @@ namespace Control_ICL1904
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            ICLlogger.Info("Starting ICL 1904 George 3 run");
             string process1 = "cmd.exe ";
             string arg = "Run_ICL1904_G3.bat";
-            ExecPro(process1, arg,"ICL");
+            ICLlogger.Info("Starting ICL 1904 George 3 run");
+            if (File.Exists("C://em1900//Run_ICL1904_G3.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\Run_ICL1904_G3.bat does not exists");
+            }
         }
        private void ExecPro(string ProcessName, string args , string Computer_system)
         {
@@ -116,7 +123,15 @@ namespace Control_ICL1904
             ICLlogger.Info("Starting ICL 1904 George 6 run");
             string process1 = "cmd.exe ";
             string arg = "Run_ICL1904_G6.bat ";
-            ExecPro(process1, arg, "ICL");
+            if (File.Exists("Run_ICL1904_G6.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\Run_ICL1904_G6.bat does not exists");
+            }
+
         }
 
 
@@ -130,7 +145,14 @@ namespace Control_ICL1904
             ICLlogger.Info("Starting Printer Dump Run");
             string process1 = "cmd.exe ";
             string arg = "printdrdump.bat ";
-            ExecPro(process1, arg, "ICL");
+            if (File.Exists("printdrdump.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\printdrdump.bat does not exists");
+            }
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -138,7 +160,14 @@ namespace Control_ICL1904
             ICLlogger.Info("Starting Looking ICL Tapes run");
             string process1 = "cmd.exe ";
             string arg = "lookmt.bat ";
-            ExecPro(process1, arg, "ICL");
+            if (File.Exists(lookmt.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\lookmt.bat does not exists");
+            }
 
         }
 
@@ -147,7 +176,15 @@ namespace Control_ICL1904
             ICLlogger.Info("Starting Preview ICL Tapes Run");
             string process1 = "cmd.exe ";
             string arg = "lookmt.list ";
-            ExecPro(process1, arg, "ICL");
+            if (File.Exists(C:\\em1900\\lookmt.list"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\lookmt.list does not exists");
+            }
+
         }
 
         private void Button6_Click_1(object sender, EventArgs e)
