@@ -246,6 +246,7 @@ namespace Control_ICL1904
 
         private void CreateCardsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL Card Edit run");
             string process1 = "cmd.exe ";
             string arg = " cardedit.bat";
             ExecPro(process1, arg, "ICL");
@@ -253,6 +254,7 @@ namespace Control_ICL1904
 
         private void CreateCardsToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL card Edit run");
             string process1 = "cmd.exe  ";
             string arg = "run_cardedit.bat";
             ExecPro(process1, arg, "ICL");
@@ -260,6 +262,7 @@ namespace Control_ICL1904
 
         private void ViewCardsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting ICL View Cards run");
             string process1 = "cmd.exe ";
             string arg = "run_cardview.bat ";
             ExecPro(process1, arg, "ICL");
@@ -267,6 +270,7 @@ namespace Control_ICL1904
 
         private void ProgrammingToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting PDF Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_pdf.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\TPS_Manuals\\TPS_Programming_Part_1.pdf";
@@ -276,6 +280,7 @@ namespace Control_ICL1904
 
         private void AdminToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting PDF Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_pdf.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\IDMS_Manuals\\AA-0899C-TB_DBMS-10admin.pdf";
@@ -285,6 +290,7 @@ namespace Control_ICL1904
 
         private void CobolToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting PDF Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_pdf.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\IDMS_Manuals\\AA-0901C-TB_DBMS-10prog.pdf";
@@ -299,6 +305,7 @@ namespace Control_ICL1904
 
         private void OpenCOBOLIDEToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting Open cobol IDE run");
             string process1 = "cmd.exe ";
             string arg = "run_Opencobide.bat ";
             ExecPro(process1, arg, "ICL");
@@ -306,6 +313,7 @@ namespace Control_ICL1904
 
         private void TelnetOn1900ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting Telnet run");
             string process1 = "cmd.exe ";
             string arg = "telnet.exe localhost 10007 ";
             ExecPro(process1, arg, "Telnet");
@@ -314,6 +322,7 @@ namespace Control_ICL1904
         private void InstalationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Nimms  Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\NIMMs\\tp4248_MIMMS_Implementation.djvu";
@@ -324,6 +333,7 @@ namespace Control_ICL1904
         private void InstalationToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             // Datafeed Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Datafeed\\tp4395_Datafeed_Systems.djvu";
@@ -334,6 +344,7 @@ namespace Control_ICL1904
         private void FileHandlerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Nimms  Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\NIMMs\\tp4243_NIMMS_File_Handler.djvu";
@@ -345,6 +356,7 @@ namespace Control_ICL1904
         private void DataManagementSystemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Nimms  Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\NIMMs\\tp4250_NIMMS_Data_Management_System.djvu";
@@ -354,6 +366,7 @@ namespace Control_ICL1904
 
         private void IntroductionToCOBOLToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\COBOL\\tp4118_Introduction_COBOL.djvu";
@@ -364,6 +377,7 @@ namespace Control_ICL1904
 
         private void COBOLAncilliriesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\COBOL\\tp4217_COBOL_Ancilliries.djvu";
@@ -373,6 +387,7 @@ namespace Control_ICL1904
 
         private void COBOLExtrasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\COBOL\\tp4436_Cobol_Extras.djvu";
@@ -382,6 +397,7 @@ namespace Control_ICL1904
 
         private void BasicToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting DJVU Viewer run");
             // BASIC
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
@@ -393,6 +409,7 @@ namespace Control_ICL1904
         private void CityAndGuildsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             // City and Guilds
+            ICLlogger.Info("Starting PDF Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_pdf.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\City_Guilds\\City and Guilds Mnemonic Manual.docx";
@@ -402,6 +419,7 @@ namespace Control_ICL1904
 
         private void AlterSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting Settings run");
             FrmSettings frms;
             frms = new FrmSettings();
             frms.Show();
@@ -410,6 +428,7 @@ namespace Control_ICL1904
         private void openCobolIDEToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             // Open COBOl IDE
+            ICLlogger.Info("Starting Open cobol IDE run");
             string process1 = "cmd.exe ";
             string arg = "run_Opencobide.bat ";
             ExecPro(process1, arg, "ICL");
@@ -433,6 +452,7 @@ namespace Control_ICL1904
         private void findEnquiryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Find Enquiry  Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\FIND\\tp4155_find_Enquiry.djvu";
@@ -442,6 +462,7 @@ namespace Control_ICL1904
         private void onlineEnquiryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Find Online Enquiry  Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\FIND\\tp4282_Online_Find.djvu";
@@ -451,6 +472,7 @@ namespace Control_ICL1904
         private void find2EnquiryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Find 2 Enquiry  Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\FIND\\tp4450_Find2_Enquiry_System.djvu";
@@ -461,6 +483,7 @@ namespace Control_ICL1904
         private void dataManagementDataValidatingEdittingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Data Management Data Validating Editting  Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Data_Management\\tp4127_Data_Management_Data_Validating_Editting.djvu";
@@ -470,6 +493,7 @@ namespace Control_ICL1904
         private void dataManagementDataUpdating2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Data Management Data Updating 2  Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Data_Management\\tp4128_Data_Management_Data_Updating (2).djvu";
@@ -479,6 +503,7 @@ namespace Control_ICL1904
         private void dataManagementIntroductionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Data Management Introduction Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Data_Management\\tp4375_data_Management_Introduction.djvu";
@@ -488,6 +513,7 @@ namespace Control_ICL1904
         private void dataManagementDataValidationEdittingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Data Management Data Validation and Editting Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Data_Management\\tp4376_Data_Management_Data_Validation_Editting.djvu";
@@ -497,6 +523,7 @@ namespace Control_ICL1904
         private void dataManagementDataUpdatingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Data Management Data Validation and Editting Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Data_Management\\tp4376_Data_Management_Data_Validation_Editting.djvu";
@@ -506,6 +533,7 @@ namespace Control_ICL1904
         private void dataManagementDataSoftwareReportingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Data Management Data Software Reporting Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Data_Management\\tp4378_Data_Management_Data_Software_Reporting.djvu";
@@ -515,6 +543,7 @@ namespace Control_ICL1904
         private void dataManagementDataFilearrangementToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Data Management Data File Arrangement Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Data_Management\\tp4379_Data_Management_Data_File_arrangement.djvu";
@@ -524,6 +553,7 @@ namespace Control_ICL1904
         private void dataManagementDataFrameworkToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Data Management Data framework Installation
+            ICLlogger.Info("Starting DJVU Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_manual.bat";
             arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Data_Management\\tp4380_Data_Management_Data_Framework.djvu";
@@ -538,6 +568,7 @@ namespace Control_ICL1904
         private void basicToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             // Dec Basic
+            ICLlogger.Info("Starting PDF Viewer run");
             string process1 = "cmd.exe ";
             string arg = "run_pdf.bat";
             arg = arg + " " + "C:\\SIMH\\simh - master\\PDP10\\exe\\AA-5059B-TK_COBOL-74_Language_Manual_Oct85.pdf";
@@ -546,6 +577,7 @@ namespace Control_ICL1904
 
         private void runDecPDP10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting PHP10 run");
             string process1 = "cmd.exe ";
             string arg = "Run_PHP10.exe";
             arg = arg + " " + " x ";
@@ -554,6 +586,7 @@ namespace Control_ICL1904
 
         private void decAlterSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting PHP10 configuration run");
             string process1 = "cmd.exe ";
             string arg = "notepad.exe ";
             arg = arg + " " + "tops10.cfg";
@@ -562,6 +595,7 @@ namespace Control_ICL1904
 
         private void telnetOnPDP10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ICLlogger.Info("Starting Telnet run");
             string process1 = "cmd.exe ";
             string arg = "telnet.exe  -t vt100 localhost 2020 ";
             ExecPro(process1, arg, "Telnet");
