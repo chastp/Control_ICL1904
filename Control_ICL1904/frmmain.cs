@@ -288,8 +288,8 @@ namespace Control_ICL1904
         private void TelnetOn1900ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string process1 = "cmd.exe ";
-            string arg = "telnet.exe localhost 10007 ";
-            ExecPro(process1, arg, "Telnet");
+            string arg = "run_telnet.bat ICL ";
+            ExecPro(process1, arg, "ICL");
         }
 
         private void InstalationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -544,8 +544,8 @@ namespace Control_ICL1904
         private void telnetOnPDP10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string process1 = "cmd.exe ";
-            string arg = "telnet.exe  -t vt100 localhost 2020 ";
-            ExecPro(process1, arg, "Telnet");
+            string arg = "run_telnet.bat Dec ";
+            ExecPro(process1, arg, "ICL");
         }
     }
 }
