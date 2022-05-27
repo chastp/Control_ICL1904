@@ -927,5 +927,112 @@ namespace Control_ICL1904
             string arg = "telnet.exe  -t vt100 localhost 2020 ";
             ExecPro(process1, arg, "Telnet");
         }
+
+        private void runDecPDP10ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ICLlogger.Info("Starting PHP10 run");
+            string process1 = "cmd.exe ";
+            string arg = "Run_PHP10.exe";
+            arg = arg + " " + " x ";
+            if (File.Exists("C:\\simh\\Run_PHP10.exe"))
+            {
+                ExecPro(process1, arg, "Dec");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\simh\\Run_PHP10.exe does not exists");
+            }
+        }
+
+        private void runICL1904G6SystemToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ICLlogger.Info("Starting ICL 1904 George 6 run");
+            string process1 = "cmd.exe";
+            string arg = "run_e6rm.bat ";
+            if (File.Exists("C:\\em1900\\run_e6rm.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\run_e6rm.bat does not exists");
+            }
+        }
+
+        private void runICL1904G3SystemToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ICLlogger.Info("Starting ICL 1904 George run");
+            string process1 = "cmd.exe";
+            string arg = "run_george.bat ";
+            if (File.Exists("C:\\em1900\\run_george.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\run_george.bat does not exists");
+            }
+        }
+
+        private void loadVDUsToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ICLlogger.Info("Starting Loading up ICL Terminals run");
+            string process1 = "cmd.exe";
+            string arg = "run_term.bat ";
+            if (File.Exists("C:\\em1900\\run_term.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\run_term.bat does not exists");
+            }
+        }
+
+        private void editCardsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ICLlogger.Info("Starting ICL card Edit run");
+            string process1 = "cmd.exe  ";
+            string arg = "run_cardedit.bat";
+            if (File.Exists("C:\\em1900\\run_cardedit.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\run_cardedit.bat does not exists");
+            }
+        }
+
+        private void viewCardsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ICLlogger.Info("Starting ICL View Cards run");
+            string process1 = "cmd.exe ";
+            string arg = "run_cardview.bat ";
+            if (File.Exists("C:\\em1900\\run_cardview.bat"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\run_cardview.bat does not exists");
+            }
+        }
+
+        private void telNetICLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ICLlogger.Info("Starting Telnet run");
+            string process1 = "cmd.exe ";
+            string arg = "telnet.exe localhost 10007 ";
+            ExecPro(process1, arg, "Telnet");
+        }
+
+        private void telnetOnPDPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ICLlogger.Info("Starting Telnet run");
+            string process1 = "cmd.exe ";
+            string arg = "telnet.exe  -t vt100 localhost 2020 ";
+            ExecPro(process1, arg, "Telnet");
+        }
     }
 }
