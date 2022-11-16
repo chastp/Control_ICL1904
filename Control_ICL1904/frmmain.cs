@@ -942,5 +942,132 @@ namespace Control_ICL1904
             }
 
         }
+
+        private void trainingDriverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Communication Manager - Training Driver
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\t1749_Training_Driver.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\t1749_Training_Driver.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\t1749_Training_Driver.djvu does not exists");
+            }
+
+        }
+
+        private void introduction1900DriverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Communication Manager - tp4311+Introduction_1900_Driver
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4311+Introduction_1900_Driver.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4311+Introduction_1900_Driver.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4311+Introduction_1900_Driver.djvu does not exists");
+            }
+        }
+
+        private void driverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Communication Manager - tp4311+tp4327_1900_Driver
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4327_1900_Driver.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4327_1900_Driver.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4327_1900_Driver.djvu does not exists");
+            }
+        }
+
+        private void dataCommunicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Communication Manager - tp4333_Data_Communication
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4333_Data_Communication.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4333_Data_Communication.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4333_Data_Communication.djvu does not exists");
+            }
+        }
+
+        private void introductionCommunicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Communication Manager - tp4417_Introduction_Communications
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4417_Introduction_Communications.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4417_Introduction_Communications.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4417_Introduction_Communications.djvu does not exists");
+            }
+        }
+
+        private void communicationTestingaidsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Communication Manager - tp4419_Communication_Testing_aids
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4419_Communication_Testing_aids.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4419_Communication_Testing_aids.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4419_Communication_Testing_aids.djvu does not exists");
+            }
+        }
+
+        private void communicationManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Communication Manager - tp4420_Comunication_Manager
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4420_Comunication_Manager.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4420_Comunication_Manager.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\Comminication_Manager\\tp4420_Comunication_Manager.djvu does not exists");
+            }
+        }
+
+        private void webSiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Showiclwebsite frm = new Showiclwebsite();
+            frm.ShowDialog();
+            frm.Close();
+        }
     }
 }
