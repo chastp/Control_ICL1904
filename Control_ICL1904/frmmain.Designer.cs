@@ -98,6 +98,7 @@
             this.alterSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.decAlterSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.webSiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -111,7 +112,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.webSiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iCLGeorge34ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.writtingGeorge34JobDescriptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.standardOperatingSoftwareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.george3OperatingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.george34OperatingSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -300,7 +305,8 @@
             this.dATAToolStripMenuItem,
             this.decBasicToolStripMenuItem,
             this.decCOBOLToolStripMenuItem,
-            this.iCLCommunicationManagerToolStripMenuItem});
+            this.iCLCommunicationManagerToolStripMenuItem,
+            this.iCLGeorge34ToolStripMenuItem});
             this.readDocumentsToolStripMenuItem.Name = "readDocumentsToolStripMenuItem";
             this.readDocumentsToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.readDocumentsToolStripMenuItem.Text = "Read Documents";
@@ -690,6 +696,13 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // webSiteToolStripMenuItem
+            // 
+            this.webSiteToolStripMenuItem.Name = "webSiteToolStripMenuItem";
+            this.webSiteToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
+            this.webSiteToolStripMenuItem.Text = "Web Site";
+            this.webSiteToolStripMenuItem.Click += new System.EventHandler(this.webSiteToolStripMenuItem_Click);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
@@ -824,12 +837,44 @@
             this.label11.TabIndex = 51;
             this.label11.Text = "Use User MANAGER to logon";
             // 
-            // webSiteToolStripMenuItem
+            // iCLGeorge34ToolStripMenuItem
             // 
-            this.webSiteToolStripMenuItem.Name = "webSiteToolStripMenuItem";
-            this.webSiteToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
-            this.webSiteToolStripMenuItem.Text = "Web Site";
-            this.webSiteToolStripMenuItem.Click += new System.EventHandler(this.webSiteToolStripMenuItem_Click);
+            this.iCLGeorge34ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.writtingGeorge34JobDescriptionsToolStripMenuItem,
+            this.standardOperatingSoftwareToolStripMenuItem,
+            this.george3OperatingToolStripMenuItem,
+            this.george34OperatingSystemToolStripMenuItem});
+            this.iCLGeorge34ToolStripMenuItem.Name = "iCLGeorge34ToolStripMenuItem";
+            this.iCLGeorge34ToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
+            this.iCLGeorge34ToolStripMenuItem.Text = "ICL George 3/4";
+            // 
+            // writtingGeorge34JobDescriptionsToolStripMenuItem
+            // 
+            this.writtingGeorge34JobDescriptionsToolStripMenuItem.Name = "writtingGeorge34JobDescriptionsToolStripMenuItem";
+            this.writtingGeorge34JobDescriptionsToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
+            this.writtingGeorge34JobDescriptionsToolStripMenuItem.Text = "Writting George 3/4 Job Descriptions";
+            this.writtingGeorge34JobDescriptionsToolStripMenuItem.Click += new System.EventHandler(this.writtingGeorge34JobDescriptionsToolStripMenuItem_Click);
+            // 
+            // standardOperatingSoftwareToolStripMenuItem
+            // 
+            this.standardOperatingSoftwareToolStripMenuItem.Name = "standardOperatingSoftwareToolStripMenuItem";
+            this.standardOperatingSoftwareToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
+            this.standardOperatingSoftwareToolStripMenuItem.Text = "Standard Operating Software";
+            this.standardOperatingSoftwareToolStripMenuItem.Click += new System.EventHandler(this.standardOperatingSoftwareToolStripMenuItem_Click);
+            // 
+            // george3OperatingToolStripMenuItem
+            // 
+            this.george3OperatingToolStripMenuItem.Name = "george3OperatingToolStripMenuItem";
+            this.george3OperatingToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
+            this.george3OperatingToolStripMenuItem.Text = "George 3 Operating";
+            this.george3OperatingToolStripMenuItem.Click += new System.EventHandler(this.george3OperatingToolStripMenuItem_Click);
+            // 
+            // george34OperatingSystemToolStripMenuItem
+            // 
+            this.george34OperatingSystemToolStripMenuItem.Name = "george34OperatingSystemToolStripMenuItem";
+            this.george34OperatingSystemToolStripMenuItem.Size = new System.Drawing.Size(368, 26);
+            this.george34OperatingSystemToolStripMenuItem.Text = "George 3/4 Operating System Commands";
+            this.george34OperatingSystemToolStripMenuItem.Click += new System.EventHandler(this.george34OperatingSystemToolStripMenuItem_Click);
             // 
             // Frmmain
             // 
@@ -952,6 +997,11 @@
         private System.Windows.Forms.ToolStripMenuItem communicationTestingaidsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem communicationManagerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem webSiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iCLGeorge34ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem writtingGeorge34JobDescriptionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem standardOperatingSoftwareToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem george3OperatingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem george34OperatingSystemToolStripMenuItem;
     }
 }
 

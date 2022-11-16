@@ -1069,5 +1069,73 @@ namespace Control_ICL1904
             frm.ShowDialog();
             frm.Close();
         }
+
+        private void writtingGeorge34JobDescriptionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Dec Basic
+            ICLlogger.Info("Starting PDF Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_pdf.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4401.pdf";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4401.pdf"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4401.pdf does not exists");
+            }
+        }
+
+        private void standardOperatingSoftwareToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // George Standard Operating Software
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4079_software_standard_Operating.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4079_software_standard_Operating.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4079_software_standard_Operating.djvu does not exists");
+            }
+        }
+
+        private void george3OperatingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // George 3 Operating
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4223_George_3_Operating.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4223_George_3_Operating.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4223_George_3_Operating.djvu does not exists");
+            }
+        }
+
+        private void george34OperatingSystemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // George 3 Operating System Commands
+            ICLlogger.Info("Starting DJVU Viewer run");
+            string process1 = "cmd.exe ";
+            string arg = "run_manual.bat";
+            arg = arg + " " + "C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4169_George_3_4.djvu";
+            if (File.Exists("C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4169_George_3_4.djvu"))
+            {
+                ExecPro(process1, arg, "ICL");
+            }
+            else
+            {
+                ICLlogger.Warning("File C:\\em1900\\ICL_1900_Manuals\\George_Operating_System\\tp4169_George_3_4.djvu does not exists");
+            }
+        }
     }
 }
